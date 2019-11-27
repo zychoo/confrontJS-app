@@ -5,18 +5,9 @@ const port = 3000;
 
 app.get('/api/foo', (req, res, next) => {
 
-    const value = 'Endpoint FOO says HELLO WORLD';
-    console.log(`Responding from foo`);
-    
-    res
-        .header({ 'Access-Control-Allow-Origin': '*' })
-        .send(value);
-});
-
-app.get('/api/bar', (req, res, next) => {
-
-    const value = 'Endpoint BAR says HELLO WORLD';
-    console.log(`Responding from bar`);
+    //Complicated business logic happens here...
+    const value = 'Hello World from FOO!';
+   
     res
         .header({ 'Access-Control-Allow-Origin': '*' })
         .send(value);
