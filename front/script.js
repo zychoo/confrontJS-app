@@ -1,4 +1,4 @@
-const url = URL_PLACEHOLDER;
+const url = 'http://localhost:3000/api/foo';
 
 function foo() {
     let req = new XMLHttpRequest();
