@@ -1,5 +1,6 @@
 exports.handler = async (event) => {
 
+    //Complicated business logic happens here...
     const value = 'Hello World from FOO!';
 
     const response = {
