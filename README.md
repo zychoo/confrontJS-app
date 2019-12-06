@@ -4,3 +4,9 @@ This app was prepared by me to support my speak on Warsaw conference ConFrontJS 
 
 Feel free to do with this whatever you like.
 
+Some useful links that are relevant to my speak:
+* [Cloud Development Kit Documentation](https://docs.aws.amazon.com/en_pv/cdk/latest/guide/home.html)
+* [AWS Console](https://aws.amazon.com/console/)
+* [AWS S3](https://aws.amazon.com/s3/)
+* [AWS Lambda](https://aws.amazon.com/lambda/)
+* [AWS Api Gateway](https://aws.amazon.com/api-gateway/)
