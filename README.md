@@ -2,6 +2,11 @@
 
 This app was prepared by me to support my speak on Warsaw conference ConFrontJS happened on 07-12-2019.
 
+Repository has 3 tags:
+1. Tag `step1` is the starting point for application - we have frontend and backend prepared
+2. Tag `step2` has infrastructure stack initialized by CDK
+3. Tag `step3` has complete code that is required to deploy stack with CDK
+
 Feel free to do with this whatever you like.
 
 Some useful links that are relevant to my speak:
