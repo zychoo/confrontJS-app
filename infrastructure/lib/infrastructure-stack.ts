@@ -8,23 +8,22 @@ export class InfrastructureStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const bucket = new s3.Bucket(this, "My Bucket", {
-      websiteIndexDocument: 'index.html',
-      websiteErrorDocument: 'error.html',
+    const bucket = new s3.Bucket(this,"ConFrontJS Bucket", {
+      websiteIndexDocument: "index.html",
+      websiteErrorDocument: "error.html",
       publicReadAccess: true
-    })
+    });
 
-    const myLambda = new lambda.Function(this, 'My Lambda', {
+    const myLambda = new lambda.Function(this, "ConFrontJS Function", {
       runtime: lambda.Runtime.NODEJS_10_X,
-      code: lambda.Code.fromAsset(path.join(__dirname, '../../back/lambda')),
-      handler: 'index.handler'
-    })
+      code: lambda.Code.asset(path.join(__dirname, "../../back/lambda")),
+      handler: "index.handler"
+    });
 
-    const restApi = new api.RestApi(this, 'My API');
+    const myApi = new api.RestApi(this, "ConFrontJS API");
+    
+    const integration = new api.LambdaIntegration(myLambda);
 
-    const apiIntegration = new api.LambdaIntegration(myLambda);
-
-    restApi.root.addMethod('GET', apiIntegration);
-
+    myApi.root.addMethod("GET", integration);
   }
 }
