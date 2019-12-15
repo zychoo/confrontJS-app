@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>ConFrontJS - Przemek Zych talk</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -21,12 +21,152 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<style>
+			footer {
+				font-size: small;
+    			position: relative;
+    			top: 50px;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+					<section>
+							<h3>
+								Przemek Zych
+							</h3>
+							<h5>
+								Staff Software Engineer @ EDC
+							</h5>
+						</section>
+				<section>
+					<h2>
+						Should I Fire my devops already?
+					</h2>
+					<h4>
+						build your infrastructure on AWS using typescript
+					</h4>
+				</section>
+				<section>
+					<h1>Hello World</h1>
+				</section>
+				<section>
+					<img src="img/aws-logo.jpg">
+					<footer>
+						“Amazon Web Services, the “Powered by AWS” logo, AWS S3, AWS EC2, AWS Lambda, AWS ApiGateway 
+						are trademarks of Amazon.com, Inc. or its affiliates in the United States and/or other countries."
+					</footer>
+				</section>
+				<section>
+					<h2>
+						Glossary
+					</h2>
+				</section>
+				<section>
+					<h2>Amazon S3
+					</h2>
+					<img style="height: 150px; width: 150px" src="img/AmazonS3.png">
+					<p>
+						Amazon Unlimited FTP Server. Can serve static websites. Cheap.
+					</p>
+					<footer>
+						“Amazon Web Services, the “Powered by AWS” logo, AWS S3, AWS EC2, AWS Lambda, AWS ApiGateway 
+						are trademarks of Amazon.com, Inc. or its affiliates in the United States and/or other countries."
+					</footer>
+				</section>
+				<section>
+						<h2>EC2</h2>
+						<img style="height: 150px; width: 150px" src="img/Amazon-EC2.png">
+						<p>
+							Amazon Virtual Servers. Can be used for anything that server is for. Expensive (pay for running server)
+						</p>
+						<footer>
+							“Amazon Web Services, the “Powered by AWS” logo, AWS S3, AWS EC2, AWS Lambda, AWS ApiGateway 
+							are trademarks of Amazon.com, Inc. or its affiliates in the United States and/or other countries."
+						</footer>
+					</section>
+				<section>
+					<h2>Lambda</h2>
+					<img style="height: 150px; width: 150px" src="img/AWS-Lambda.png">
+					<p>
+						Serverless backend. Can run almost any function in many programming languages. Cheap (pay only if invoked)
+					</p>
+					<footer>
+						“Amazon Web Services, the “Powered by AWS” logo, AWS S3, AWS EC2, AWS Lambda, AWS ApiGateway 
+						are trademarks of Amazon.com, Inc. or its affiliates in the United States and/or other countries."
+					</footer>
+				</section>
+				<section>
+					<h2>Api Gateway</h2>
+					<img style="height: 150px; width: 150px" src="img/Amazon-API-Gateway.png">
+					<p>
+						Connects your services with world. You can easily add new REST methods to run your Lambda function
+					</p>
+					<footer>
+						“Amazon Web Services, the “Powered by AWS” logo, AWS S3, AWS EC2, AWS Lambda, AWS ApiGateway 
+						are trademarks of Amazon.com, Inc. or its affiliates in the United States and/or other countries."
+					</footer>
+				</section>
+				<section>
+					<h2>
+						What next?
+					</h2>
+				</section>
+				<section id="video1">
+					<video>
+						<source data-src="video/install-aws-cdk.avi" type="video/avi"/>
+						<source data-src="video/install-aws-cdk.mp4" type="video/mp4"/>
+					</video>
+				</section>
+				<section>
+					<video id="video2">
+						<source data-src="video/init-infrastructure-app.avi" type="video/avi"/>
+						<source data-src="video/init-infrastructure-app.mp4" type="video/mp4"/>
+					  </video>
+				</section>
+				<section>
+					<video id="video3">
+						<source data-src="video/install-dependencies.avi" type="video/avi"/>
+						<source data-src="video/install-dependencies.mp4" type="video/mp4"/>
+					  </video>
+				</section>
+				<section>
+					<img src="img/cdk-stack.png">
+				</section>
+				<section>
+					<img src="img/cdk-app.png">
+				</section>
+				<section>
+					<h1>App developed today</h1>
+					<p><a href="https://github.com/zychoo/confrontJS-app">https://github.com/zychoo/confrontJS-app</a></p>
+					<p><img src="img/app-qr.png"></p>
+				</section>
+				<section>
+						<h1>This presentation</h1>
+						<a href="https://github.com/zychoo/conFrontJs-slides">https://github.com/zychoo/conFrontJs-slides</a>
+						<img src="img/slides-qr.png">
+				</section>
+				<section>
+					<h1>Q&A</h1>
+				</section>
+				<section>
+					<h1>Stay in touch</h1>
+					<p>
+							zychoo @ github.com
+					</p>
+					<p>
+							przemysław zych @ LinkedIn
+					</p>
+					<p>
+							@pzychDev @ Twitter
+					</p>
+				</section>
+				<section>
+					<h2>DEVS</h2>
+					<h1 style="color: #e25555;">&hearts;</h1>
+					<h2>DEVOPS</h2>
+				</section>
 			</div>
 		</div>
 
@@ -44,6 +184,12 @@
 					{ src: 'plugin/highlight/highlight.js', async: true }
 				]
 			});
+
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				if (event.currentSlide.children[0].nodeName == 'VIDEO') {
+					event.currentSlide.children[0].play();
+				};
+			} );
 		</script>
 	</body>
 </html>
